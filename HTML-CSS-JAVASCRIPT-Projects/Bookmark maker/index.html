@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -6,38 +7,32 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <div class="button-maker-bg-container p-4">
-        <h1 class="button-maker-heading text-center mb-4">Button Maker</h1>
-        <div class="button-maker-container bg-light pt-4 pb-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-7">
-                        <p class="input-label">BACKGROUND COLOR</p>
-                        <input class="user-input" type="text" id="bgColorInput" />
-                        <p class="input-label">FONT COLOR</p>
-                        <input class="user-input" type="text" id="fontColorInput" />
-                        <p class="input-label">FONT SIZE (in px)</p>
-                        <input class="user-input" type="text" id="fontSizeInput" />
-                        <p class="input-label">FONT WEIGHT</p>
-                        <input class="user-input" type="text" id="fontWeightInput" />
-                        <p class="input-label">PADDING (in px)</p>
-                        <input class="user-input" type="text" id="paddingInput" />
-                        <p class="input-label">BORDER RADIUS (in px)</p>
-                        <input class="user-input" type="text" id="borderRadiusInput" />
-                        <div class="text-right mt-4">
-                            <button id="applyButton" class="btn btn-primary" onclick="createBtn()">
-                                Apply
-                            </button>
-                        </div>
+    <div class="bgContainerblue">
+        <p class="hello">Hello <br /><span class="name">Jane Doe</span></p>
+        <div class="bookmarkCard">
+            <h1 class="heading">Bookmark Your Favorite Sites</h1>
+            <div class="innerform">
+                <form id="bookmarkForm">
+                    <label class="label" for="siteNameInput">SITE NAME</label>
+                    <input id="siteNameInput" class="form-control" />
+                    <p class="errmsg" id="siteNameErrMsg"></p>
+                    <br />
+                    <label class="label" for="siteUrlInput">SITE URL</label>
+                    <input id="siteUrlInput" class="form-control" />
+                    <p class="errmsg" id="siteUrlErrMsg"></p>
+                    <br />
+                    <div class="text-right">
+                        <button type="submit" class="backg btn btn-dark" id="submitBtn">Submit</button>
                     </div>
-                    <div class="col-12 col-md-5 mt-4 text-center">
-                        <button class="custom-button" id="customButton">Custom Button</button>
-                    </div>
-                </div>
+                </form>
+            </div>
+            <div>
+                <ul class="mt-4" id="bookmarksList"></ul>
             </div>
         </div>
     </div>

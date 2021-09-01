@@ -1,17 +1,22 @@
-let bgColor = document.getElementById("bgColorInput")
-let fontColor = document.getElementById("fontColorInput")
-let fontSize = document.getElementById("fontSizeInput")
-let fontWeight = document.getElementById("fontWeightInput")
-let padding2 = document.getElementById("paddingInput")
-let borderRadius2 = document.getElementById("borderRadiusInput")
-let customBtn = document.getElementById("customButton")
+let billAmountgiven = document.getElementById("billAmount");
+let percentTip = document.getElementById("percentageTip");
+let tipamount = document.getElementById("tipAmount");
+let totalamount = document.getElementById("totalAmount");
+let warningMsg = document.getElementById("errorMessage");
+let msgWarning = "Please Enter a Valid Input.";
 
-function createBtn() {
-    customBtn.style.backgroundColor = bgColor.value
-    customBtn.style.color = fontColor.value
-    customBtn.style.fontSize = fontSize.value
-    customBtn.style.fontWeight = fontWeight.value
-    customBtn.style.padding = padding2.value
-    customBtn.style.borderRadius = borderRadius2.value
-
+function calculatevalues() {
+    if (billAmountgiven.value == "") {
+        warningMsg.textContent = msgWarning
+    } else if (percentTip.value == "") {
+        warningMsg.textContent = msgWarning
+    } else {
+        let billAmountinput = parseInt(billAmountgiven.value);
+        let percentTipinput = parseInt(percentTip.value);
+        let calculatedTip = ((percentTipinput / 100) * billAmountinput);
+        let calculatedtotalamount = billAmountinput + calculatedTip;
+        tipamount.value = calculatedTip;
+        totalamount.value = calculatedtotalamount;
+        warningMsg.textContent = ""
+    }
 }

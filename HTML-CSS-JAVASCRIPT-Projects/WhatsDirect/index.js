@@ -1,17 +1,17 @@
-let bgColor = document.getElementById("bgColorInput")
-let fontColor = document.getElementById("fontColorInput")
-let fontSize = document.getElementById("fontSizeInput")
-let fontWeight = document.getElementById("fontWeightInput")
-let padding2 = document.getElementById("paddingInput")
-let borderRadius2 = document.getElementById("borderRadiusInput")
-let customBtn = document.getElementById("customButton")
+let buttonELement = document.getElementById("sendbutton")
+let errorMsg = document.getElementById("errormsg")
+let givenphonenum = document.getElementById("phonenum")
+let givenmsg = document.getElementById("msg")
+let whatsurl = document.getElementById("whatsappurl")
 
-function createBtn() {
-    customBtn.style.backgroundColor = bgColor.value
-    customBtn.style.color = fontColor.value
-    customBtn.style.fontSize = fontSize.value
-    customBtn.style.fontWeight = fontWeight.value
-    customBtn.style.padding = padding2.value
-    customBtn.style.borderRadius = borderRadius2.value
-
+function sendmsg() {
+    let givenphonenumvalue = givenphonenum.value
+    let givenmsgvalue = givenmsg.value
+    if (givenphonenumvalue === "") {
+        errorMsg.textContent = "Please Enter 10Digit Valid Phone Number"
+    } else if (givenphonenumvalue.length == 10) {
+        whatsurl.href = "https://api.whatsapp.com/send?phone=" + "+91" + givenphonenumvalue + "&text=" + givenmsgvalue;
+    } else {
+        errorMsg.textContent = "Please Enter Valid 10 Digit Mobile Number"
+    }
 }

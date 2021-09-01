@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.navbar-logo {
+    width: 120px;
+}
+
+.height {
+    height: 100vh;
+}
+
+.navig {
+    margin-left: auto;
+}
+
+.services-title {
+    color: #183b56;
+    font-weight: bold;
+}
+
+.services-para {
+    color: #7b8794;
+    font-size: 20px;
+}
+
+.services-image {
+    width: 100px;
+}
+
+.services-card-title {
+    color: #183b56;
+    font-size: 28px;
+}
+
+.services-card-para {
+    color: #7b8794;
+    font-size: 18px;
+}
+
+.products-title {
+    color: #183b56;
+    font-weight: bold;
+}
+
+.products-bg {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.products-card {
+    background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-headphones-bg.png');
+    background-size: cover;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.products-card-2 {
+    background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-laptops-bg.png');
+    background-size: cover;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.products-card-title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.products-card-para {
+    color: #fff;
+    font-size: 19px;
+}
+
+.card-view-details-button {
+    background-color: #fff;
+    border-radius: 50px;
+    border-width: 0px;
+    padding: 15px;
+    color: #ff9f00;
+}
+
+.card-buy-button {
+    border-radius: 8px;
+    background-color: transparent;
+    border-width: 2px;
+    padding: 10px;
+}
+
+.modal-content-bold {
+    font-weight: bold;
+}
+
+.seeallofferslink {
+    color: #ff9f00;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.offer-bg {
+    background-image: linear-gradient(to right, #f49541, #dd5d97);
+}
+
+.offerimg1 {
+    width: 100%;
+}
+
+.offer-title {
+    color: #ad2167;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.offer-para {
+    color: #fff;
+    font-size: 21px;
+}
+
+.para-incline {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.blogs-card-head-image {
+    width: 100%;
+}
+
+.blogs-title {
+    font-weight: bold;
+    color: #183b56;
+    margin-bottom: 16px;
+}
+
+.blogs-card {
+    margin-bottom: 20px;
+}
+
+.blogs-card-content {
+    padding: 15px;
+}
+
+.blogs-card-category {
+    color: #959ead;
+}
+
+.blogs-card-title {
+    color: #183b56;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.blogs-card-para {
+    color: #959ead;
+    font-size: 21px;
+}
+
+.blogs-card-link {
+    color: #ff9f00;
+    font-weight: bold;
+}
+
+
+.exploredealsbg {
+    background-color: #f5f7fa;
+    padding: 10px;
+}
+
+.dealstitle {
+    color: #183b56;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.innercard {
+    padding: 15px;
+}
+
+.dealscard {
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.dealscardtitle {
+    color: #183b56;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.dealscardinnerimg {
+    width: 120px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.dealscardinnerimgtv {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.dealscardinnerpara {
+    color: #183b56;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.seealldetailslink {
+    color: #ff9f00;
+    font-weight: bold;
+}
+
+.joinbg {
+    background-color: #f5f7fa;
+    text-align: center;
+
+
+}
+
+.jointitle {
+    color: #183b56;
+    font-weight: bold;
+}
+
+.contactbutton {
+    border-color: #ff9f00;
+    color: #ff9f00;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 20px;
+    border-width: 2px;
+}
+
+.iconbg {
+    background-color: #152c3e;
+    padding: 10px;
+    border-radius: 60px;
+    font-size: 24px;
+    color: #5a7184;
+
+}
+
+.bgfooter {
+    background-color: #0d2436;
+
+}
+
+.footerlogo {
+    width: 160px;
+}
+
+.footerparaaddress {
+    font-size: 22px;
+    color: #5a7184;
+    font-weight: bold;
+}
+
+.footermenutitle {
+    font-size: 26px;
+    color: #5a7184;
+    font-weight: bold;
+}
+
+.footermenupara {
+    font-size: 27px;
+    color: #5a7184;
+    margin-top: 16px;
+
+}
+
+.horizontalrowfooter {
+    height: 3px;
+    width: 100%;
+    background-color: #5a7184;
+}
